@@ -39,5 +39,36 @@ FROM TBL_MEMBER;
 */
 
 
+--○ 쿼리문 준비
+SELECT SID, NAME, TEL
+FROM TBL_MEMBER
+ORDER BY 1;
+--==>>
+/*
+SID	 NAME    	TEL
+1	김가영	010-1111-1111
+2	김서현	010-2222-2222
+3	이새롬	010-8833-0594
+4	이유림	010-4444-4444
+*/
+--> 한 줄 구성
+SELECT SID, NAME, TEL FROM TBL_MEMBER ORDER BY 1
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
