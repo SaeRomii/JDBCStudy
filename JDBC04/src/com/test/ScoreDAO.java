@@ -65,6 +65,9 @@ public class ScoreDAO
 			dto.setTot(rs.getInt("TOT"));
 			dto.setAvg(rs.getDouble("AVG"));
 			
+			// 추가 새롬 check~!!!
+			dto.setRank(rs.getInt("RANK"));
+			
 			result.add(dto);
 			
 		}
@@ -101,6 +104,7 @@ public class ScoreDAO
 			dto.setMat(rs.getInt("MAT"));
 			dto.setTot(rs.getInt("TOT"));
 			dto.setAvg(rs.getDouble("AVG"));
+			dto.setRank(rs.getInt("RANK"));
 			
 			result.add(dto);
 			
@@ -138,6 +142,7 @@ public class ScoreDAO
 			dto.setMat(rs.getInt("MAT"));
 			dto.setTot(rs.getInt("TOT"));
 			dto.setAvg(rs.getDouble("AVG"));
+			dto.setRank(rs.getInt("RANK"));
 			
 			result.add(dto);
 			
