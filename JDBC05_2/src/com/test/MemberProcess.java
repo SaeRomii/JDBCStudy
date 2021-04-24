@@ -36,9 +36,7 @@ public class MemberProcess
 			StringBuilder cityStr = new StringBuilder();
 			
 			for (String city : citys)
-			{
 				cityStr.append(city + "/");
-			}
 			
 			// 부서 리스트 구성
 			ArrayList<String> buseos = dao.searchBuseo();
@@ -561,10 +559,11 @@ public class MemberProcess
 				if (response.equals("Y") || response.equals("y"))
 				{
 					int result = dao.remove(Integer.parseInt(value));
-					if (result > 0)
-					{
-						System.out.println();
-					}
+					System.out.println("\n삭제가 완료되었습니다.");
+				}
+				else 
+				{
+					System.out.println("\n삭제가 취소되었습니다.");
 				}
 				
 				
